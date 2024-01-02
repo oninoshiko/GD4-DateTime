@@ -40,13 +40,13 @@ func get_date_string() -> String:
 func get_time_string() -> String:
 	return Time.get_time_string_from_unix_time(s)
 	
-func get_time_dict() -> Dictionary:
+func get_datetime_dict() -> Dictionary:
 	return Time.get_datetime_dict_from_unix_time(s)
 	
-func set_time_dict(input:Dictionary) -> void:
+func set_datetime_dict(input:Dictionary) -> void:
 	s=Time.get_unix_time_from_datetime_dict(input)
 	
-func set_time_string(input:String) -> void:
+func set_datetime_string(input:String) -> void:
 	s=Time.get_unix_time_from_datetime_string(input)
 
 func inc(sec:int = 1) -> void:
